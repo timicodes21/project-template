@@ -20,6 +20,7 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:sonarjs/recommended-legacy',
     'plugin:react-hooks/recommended',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
     'prettier',
   ],
   plugins: ['unused-imports', '@typescript-eslint'],
@@ -45,6 +46,11 @@ module.exports = {
         ignorePropertyModificationsFor: ['state'],
       },
     ],
+    // rect Query
+    '@tanstack/query/exhaustive-deps': 'error',
+    '@tanstack/query/no-rest-destructuring': 'warn',
+    '@tanstack/query/stable-query-client': 'error',
+    // ---     ends here ---
     // ---     ends here ---
     // This allows the strict use of arrow functions
     'react/function-component-definition': [
