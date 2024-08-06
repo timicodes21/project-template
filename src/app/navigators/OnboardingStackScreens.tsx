@@ -1,7 +1,7 @@
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import Login from '../../screens/onboarding/login/Login';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {IOnboardingStackParamsList, OnboardingNavigationEnum} from './types/onboarding';
+import Login from '../../screens/onboarding/Login';
 
 const OnboardingStack = createNativeStackNavigator<IOnboardingStackParamsList>();
 

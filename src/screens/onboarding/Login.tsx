@@ -1,10 +1,10 @@
 import React from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
-import {ILoginScreenNavigationProps} from '../../../app/navigators/types/onboarding';
-import {CustomTheme} from '../../../app/providers/theme/interfaces';
-import {useTheme} from '../../../app/providers/theme/themeContext';
-import {setIsAuthenticated} from '../../../app/redux/slices/authSlice';
-import {useAppDispatch} from '../../../app/redux/store/hooks';
+import {ILoginScreenNavigationProps} from '../../app/navigators/types/onboarding';
+import {CustomTheme} from '../../app/providers/theme/interfaces';
+import {useTheme} from '../../app/providers/theme/themeContext';
+import {setIsAuthenticated} from '../../app/redux/slices/authSlice';
+import {useAppDispatch} from '../../app/redux/store/hooks';
 
 const Login: ILoginScreenNavigationProps = () => {
   const dispatch = useAppDispatch();

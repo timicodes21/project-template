@@ -1,10 +1,10 @@
 import {NavigationContainer, ParamListBase, createNavigationContainerRef} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import TabStackScreen from './TabStack';
-import {RootNavigatorEnum, RootStackParamsList} from './types/root';
 import {useAppSelector} from '../redux/store/hooks';
+import AuthenticatedRoutes from './AuthenticatedRoutes';
 import OnboardingStackScreens from './OnboardingStackScreens';
+import {RootNavigatorEnum, RootStackParamsList} from './types/root';
 
 type NavigationParams = ParamListBase;
 const navigationRef = createNavigationContainerRef<NavigationParams>();
@@ -20,7 +20,7 @@ const AppNavigationContainer = () => {
           animation: 'slide_from_bottom',
         }}>
         {isAuthenticated ? (
-          <Stack.Screen name={RootNavigatorEnum.TABS} component={TabStackScreen} />
+          <Stack.Screen name={RootNavigatorEnum.TABS} component={AuthenticatedRoutes} />
         ) : (
           <Stack.Screen name={RootNavigatorEnum.ONBOARDING} component={OnboardingStackScreens} />
         )}

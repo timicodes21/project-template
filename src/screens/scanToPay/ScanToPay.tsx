@@ -1,12 +1,12 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-const SettingsList = () => {
+const ScanToPay = () => {
   return (
     <View>
-      <Text>SettingsList</Text>
+      <Text>ScanToPay</Text>
     </View>
   );
 };
 
-export default SettingsList;
+export default ScanToPay;

@@ -1,4 +1,4 @@
-package com.project
+package com.tixxety.app
 
 import android.app.Application
 import com.facebook.react.PackageList
